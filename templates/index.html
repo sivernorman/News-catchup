@@ -12,13 +12,15 @@
          {% for news in news %}
             <p>{{ news.title }}</p>
          <div class = "head">TODAY'S TOP HEADLINES</div>
+         <div class="row">
+             <div class="col-md-4">
          <img src="{{news.urlToImage}}"width="400px"height="300px" alt="">
-     <div class="wrapper">
-         <div class = "c-box">
-        <div class="content">{{news.author}}</div>
-        <div class="content">{{news.content}}</div>
+        </div>
+     <div class="col-md-8">
+         <h1>{{news.author}}</h1>
+        <h3>{{news.content}}</h3>
         <a href="{{news.url}}">Read more</a>
-        <div class="content"><p style="color:rgb(77, 255, 0);">Publish Date:- </p><p>{{p_date}}</p></div>
-        </div>
-        </div>
+       <p style="color:rgb(77, 255, 0);">Publish Date:- </p><p>{{p_date}}</p><hr>
+         </div>
         {% endfor %}
+    </div>
