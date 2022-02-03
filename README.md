@@ -1,4 +1,4 @@
-# NEWS-HIGHLIGHTER
+# NEWS-CATCHUP
 # Author
 Silver Norman
 # Description
